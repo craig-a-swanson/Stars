@@ -34,10 +34,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIK-9z-BkM">
                                                 <rect key="frame" x="0.0" y="0.0" width="182" height="30"/>
                                                 <state key="normal" title="Print Stars"/>
+                                                <connections>
+                                                    <action selector="printStars:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gjK-Sj-u7q"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLN-OU-FB8">
                                                 <rect key="frame" x="202" y="0.0" width="182" height="30"/>
                                                 <state key="normal" title="Create"/>
+                                                <connections>
+                                                    <action selector="createStar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HGr-q7-UNI"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -94,6 +100,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="distanceTextField" destination="cnZ-jF-Qwd" id="92c-FX-EFc"/>
+                        <outlet property="nameTextField" destination="Tgv-EZ-Q26" id="p4i-65-Oq0"/>
+                        <outlet property="tableView" destination="Z7J-Cd-i7B" id="wDg-B5-LsV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
