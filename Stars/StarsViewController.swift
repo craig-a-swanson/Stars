@@ -22,7 +22,7 @@ class StarsViewController: UIViewController {
     }
 
     @IBAction func printStars(_ sender: UIButton) {
-        print("Tapped on print stars")
+        print(starController.listStars())
     }
     
     @IBAction func createStar(_ sender: UIButton) {
@@ -43,3 +43,18 @@ class StarsViewController: UIViewController {
     }
 }
 
+extension StarsViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return starController.stars.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "StarCell", for: indexPath) as? StarTableViewCell else { fatalError("A star cell was not found.") }
+        let star = starController.stars[indexPath.row] // includes sections as well!!
+        cell.star = star
+        
+        return cell
+    }
+    
+    
+}

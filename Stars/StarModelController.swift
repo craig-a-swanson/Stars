@@ -18,4 +18,12 @@ class StarModelController {
         
         stars.append(star)
     }
+    
+    func listStars() -> String {
+        var output = ""
+        for star in stars {
+            output += "\(star.name) is \(star.distanceDescription).\n"
+        }
+        return output
+    }
 }

@@ -15,6 +15,7 @@
 		4464F7872346D9A7000956B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4464F7852346D9A7000956B0 /* LaunchScreen.storyboard */; };
 		4464F78F2346E24B000956B0 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4464F78E2346E24B000956B0 /* Star.swift */; };
 		4464F7912346E37B000956B0 /* StarModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4464F7902346E37B000956B0 /* StarModelController.swift */; };
+		4464F7932346EB4C000956B0 /* StarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4464F7922346EB4C000956B0 /* StarTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4464F7882346D9A7000956B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4464F78E2346E24B000956B0 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		4464F7902346E37B000956B0 /* StarModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarModelController.swift; sourceTree = "<group>"; };
+		4464F7922346EB4C000956B0 /* StarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				4464F78E2346E24B000956B0 /* Star.swift */,
 				4464F7902346E37B000956B0 /* StarModelController.swift */,
 				4464F77E2346D9A6000956B0 /* StarsViewController.swift */,
+				4464F7922346EB4C000956B0 /* StarTableViewCell.swift */,
 				4464F7802346D9A6000956B0 /* Main.storyboard */,
 				4464F7832346D9A7000956B0 /* Assets.xcassets */,
 				4464F7852346D9A7000956B0 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4464F7912346E37B000956B0 /* StarModelController.swift in Sources */,
+				4464F7932346EB4C000956B0 /* StarTableViewCell.swift in Sources */,
 				4464F77F2346D9A6000956B0 /* StarsViewController.swift in Sources */,
 				4464F77B2346D9A6000956B0 /* AppDelegate.swift in Sources */,
 				4464F77D2346D9A6000956B0 /* SceneDelegate.swift in Sources */,
