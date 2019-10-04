@@ -8,7 +8,7 @@
 
 import Foundation
 
-class StarController {
+class StarModelController {
     // by marking the setter as private, means that nothing else can enter things into this array
     // Also, when empty parentheses are after a type, it creates a new instance of that type -- eg:   var starA = [Star]() would work just as well
     private(set) var stars: [Star] = []

@@ -9,7 +9,9 @@
 import UIKit
 
 class StarsViewController: UIViewController {
-
+    
+    let starController = StarModelController()
+    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var distanceTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
@@ -24,7 +26,20 @@ class StarsViewController: UIViewController {
     }
     
     @IBAction func createStar(_ sender: UIButton) {
-        print("Tapped on create a star")
+        guard let name = nameTextField.text,
+            let distanceString = distanceTextField.text,
+            !name.isEmpty,
+            !distanceString.isEmpty,
+            let distance = Double(distanceString) else { return }
+        
+        starController.createStar(named: name, withDistance: distance)
+        
+        nameTextField.text = ""
+        distanceTextField.text = ""
+        
+        nameTextField.becomeFirstResponder()
+        
+        tableView.reloadData()
     }
 }
 
